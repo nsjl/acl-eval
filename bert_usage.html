@@ -1,0 +1,88 @@
+<html><head><meta charset='UTF-8'><style>
+body { font-family: Roboto, Arial, sans-serif; background-color: #f5f5f5; max-width: 800px; margin: auto; padding: 40px 20px; }
+h1 { font-size: 28px; color: #673ab7; margin-bottom: 5px; }
+h2.title { font-size: 20px; font-weight: 400; color: #333; margin-bottom: 30px; }
+.card { background: white; border-radius: 8px; padding: 16px; margin-bottom: 12px; box-shadow: 0 1px 3px rgba(0,0,0,0.1); }
+.user { border-left: 5px solid #2196f3; }
+.assistant { border-left: 5px solid #e91e63; }
+.image { text-align: center; margin: 20px 0; }
+a.feedback { display: inline-block; background: #673ab7; color: white; padding: 10px 20px; border-radius: 5px; text-decoration: none; margin-top: 40px; font-weight: bold; }
+a.feedback:hover { background: #5e35b1; }
+</style></head><body>
+<h1>ACL Bot Chat Transcript</h1>
+<h2 class='title'>BERT Usage</h2>
+<div class='card user'><b>User:</b> Hello</div>
+<div class='card assistant'><b>Bot:</b> Hello! How can I assist you today?</div>
+<div class='image'><img src='bert_usage.png' alt='Image' style='max-width:100%; height:auto;'></div>
+<div class='card user'><b>User:</b> Can you show me 5 papers from ACL 2023?</div>
+<div class='card assistant'><b>Bot:</b> It seems that I couldn&#x27;t find any papers for ACL 2023 at the moment. Would you like to search for a different event or perhaps look for specific topics or authors?</div>
+<div class='card user'><b>User:</b> Please show me 5 papers from EMNLP 2023.</div>
+<div class='card assistant'><b>Bot:</b> It seems that I&#x27;m unable to find the event ID for EMNLP 2023 at the moment. Would you like to search for papers from a different event or publication?</div>
+<div class='card user'><b>User:</b> What are the 10 most commonly used methods?</div>
+<div class='card assistant'><b>Bot:</b> The 10 most commonly used methods in the ACL Anthology are:
+
+1. Expectation-Maximization (1158 uses)
+2. Logistic Regression (1143 uses)
+3. Data Augmentation (1077 uses)
+4. Fine-tuning (1013 uses)
+5. Contrastive Learning (839 uses)
+6. Knowledge Distillation (781 uses)
+7. Reinforcement Learning (669 uses)
+8. Multi-task Learning (665 uses)
+9. Beam Search (641 uses)
+10. TF-IDF (628 uses)</div>
+<div class='card user'><b>User:</b> Please output this as csv</div>
+<div class='card assistant'><b>Bot:</b> Certainly! Here is the information in CSV format:
+
+```
+Method Name, Usage Count
+Expectation-Maximization, 1158
+Logistic Regression, 1143
+Data Augmentation, 1077
+Fine-tuning, 1013
+Contrastive Learning, 839
+Knowledge Distillation, 781
+Reinforcement Learning, 669
+Multi-task Learning, 665
+Beam Search, 641
+TF-IDF, 628
+```</div>
+<div class='card user'><b>User:</b> What are the top 10 datasets for which there are results?</div>
+<div class='card assistant'><b>Bot:</b> Here are the top 10 datasets for which there are results, formatted as CSV:
+
+```
+Dataset Name, Result Count
+GLUE, 1185
+SST-2, 1055
+Twitter, 982
+English, 843
+Reddit, 815
+CNN/DailyMail, 810
+Yelp, 765
+IMDB, 763
+MNLI, 687
+Natural Questions, 610
+```</div>
+<div class='card user'><b>User:</b> What kind of metrics are reported for GLUE?</div>
+<div class='card assistant'><b>Bot:</b> Here are some of the metrics that are reported for the dataset GLUE:
+
+1. Accuracy
+2. F1-score
+3. Pearson Correlation
+4. Matthew&#x27;s Correlation Coefficient
+5. Spearman Correlation
+6. BLEU
+7. ROUGE (including variants like ROUGE-1, ROUGE-2, ROUGE-L)
+8. MCC (Matthews Correlation Coefficient)
+9. AUC (Area Under Curve)
+10. Perplexity
+
+(Note: The full list is extensive and includes many variants and specific metrics for particular tasks, as seen in the detailed query result.)</div>
+<div class='card user'><b>User:</b> What is the best F1-Score reported on GLUE</div>
+<div class='card assistant'><b>Bot:</b> The best F1-score reported on the GLUE dataset is 3.41.</div>
+<div class='card user'><b>User:</b> What is the best accuracy reported on GLUE?</div>
+<div class='card assistant'><b>Bot:</b> The best accuracy reported on the GLUE dataset is 18.1.</div>
+<div class='card user'><b>User:</b> What is the best accuracy reported on GLUE that is smaller than 1?</div>
+<div class='card assistant'><b>Bot:</b> The best accuracy reported on the GLUE dataset that is smaller than 1 is 0.999.</div>
+<p><a class='feedback' href='https://docs.google.com/forms/d/e/1FAIpQLSc8a44X_4Q7rb5bRXBpomUM_D3vr0fC9nCNY40P7aIzXHX13g/viewform?usp=dialog' target='_blank'>Click here to provide feedback</a></p>
+</body></html>
