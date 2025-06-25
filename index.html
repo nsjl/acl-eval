@@ -16,6 +16,23 @@
       color: #673ab7;
       margin-bottom: 20px;
     }
+    .logo {
+      text-align: right;
+      margin-bottom: 10px;
+    }
+    .logo img {
+      height: 120px;
+    }
+    .intro {
+      background: white;
+      border-radius: 8px;
+      padding: 16px;
+      margin-bottom: 24px;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+      color: #333;
+      font-size: 15px;
+      line-height: 1.6;
+    }
     .card {
       background: white;
       border-radius: 8px;
@@ -37,15 +54,73 @@
       color: #666;
       font-size: 14px;
     }
+  .card-link {
+  text-decoration: none;
+  display: block;
+}
+
+.card-link .card {
+  transition: background-color 0.2s ease;
+}
+
+.card-link:hover .card {
+  background-color: #ede7f6; /* light purple */
+  cursor: pointer;
+}
+
+  
+  
   </style>
 </head>
 <body>
-  <h1>ACL Bot Chat Evaluation</h1>
 
-  <div class="card">
-    <a href="bert2.html" target="_blank">Chat: Emergence of BERT</a>
-    <div class="desc">On the emergence of papers on or using BERT circa 2018.</div>
+  <div class="logo">
+    <img src="logo.png" alt="ACLBot Logo">
   </div>
+
+  <h1>ACLBot Chat Evaluation</h1>
+
+  <div class="intro">
+  <p><strong>Welcome evaluators!</strong> This system, <b>ACLBot</b>, is a research chatbot that helps users explore and understand scientific papers from the ACL Anthology.</p>
+
+  <p>You do <strong>not need to read about the system internals</strong> to evaluate the chats. Just look at the conversation and judge how helpful the bot is.</p>
+
+  <p>If you're curious, you can <a href="description.html"><strong>read more about how the system works here</strong></a>.</p>
+
+  <p>ACLBot is powered by a large language model and connected to a <strong>Neo4j knowledge graph</strong> of papers, authors, venues, and topics. This lets it answer not only text-based questions but also perform graph-based reasoning — for example, finding citation links, research trends, and clusters of related work.</p>
+
+  <p>The goal of this evaluation is to assess how well the bot answers queries using both the language model and the knowledge graph. Each linked chat is a real interaction. Please read and evaluate using the provided form.</p>
+</div>
+
+  <h1>Chats</h1>
+
+  <a href="database.html" class="card-link">
+    <div class="card">
+    <div class="title">What's in the database?</div>
+    <div class="desc">Chat about what is in the ACLBot's database.</div>
+    </div>
+  </a>
+
+  <a href="bert2.html" class="card-link">
+    <div class="card">
+    <div class="title">Chat: Emergence of BERT</div>
+    <div class="desc">On the emergence of papers on or using BERT circa 2018.</div>
+    </div>
+  </a>
+
+  <a href="random.html" class="card-link">
+    <div class="card">
+    <div class="title">Random paper</div>
+    <div class="desc">Explore a random paper.</div>
+    </div>
+  </a>
+
+  <a href="bertscore.html" class="card-link">
+    <div class="card">
+    <div class="title">BERTScore</div>
+    <div class="desc">Emergence of the BERTScore metric.</div>
+    </div>
+  </a>
 
   <!-- 🟣 Add more entries below like this -->
   <!--
